@@ -57,7 +57,7 @@ Write deployment manifest files for each service (frontend, backend, and Postgre
 These files define the configuration for each service, including containers, environment variables, ports, and volumes.
 Deploy the Application to Minikube:
 
-Use the kubectl apply -f <file-name>.yml command to deploy the frontend, backend, and PostgreSQL services to the Kubernetes cluster.
+Use the kubectl apply -f frontend-deployment.yml, kubectl apply -f backend-deployment.yml, kubectl apply -f postgre-deployment.yml command to deploy the frontend, backend, and PostgreSQL services to the Kubernetes cluster.
 Expose Services via Kubernetes:
 
 Expose the frontend service using kubectl expose to make it accessible via an external IP or port.
